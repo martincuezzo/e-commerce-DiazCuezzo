@@ -9,7 +9,6 @@ return(
       </div>
     </Container>
     )
-
 }
 
 export default ItemListContainer

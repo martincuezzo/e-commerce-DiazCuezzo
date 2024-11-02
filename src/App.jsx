@@ -8,9 +8,7 @@ function App() {
     <div>
       <Navbarcomponent/>
       <ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>
-    </div>
-      
-    
+    </div>  
   )
 }
 
