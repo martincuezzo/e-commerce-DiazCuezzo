@@ -23,8 +23,8 @@ function Navbarcomponent() {
             <Nav.Link href="#link">PREGUNTAS FRECUENTES</Nav.Link>
             <Nav.Link href="#link">¿QUIENES SOMOS?</Nav.Link>
           </Nav>
-          <Cartwidget/>
         </Navbar.Collapse>
+        <Cartwidget/>
       </Container>
     </Navbar>
   );
