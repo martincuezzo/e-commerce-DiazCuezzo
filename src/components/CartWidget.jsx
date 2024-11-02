@@ -6,7 +6,7 @@ const Cartwidget= () =>{
     return(
         <div>
         <Button variant="dark">
-        <FaShoppingCart fontSize={'1.3rem'}/> <Badge bg="secondary">5</Badge>
+        <FaShoppingCart fontSize={'1.3rem'}/> <Badge bg="secondary">4</Badge>
         </Button>
         </div>
     )
