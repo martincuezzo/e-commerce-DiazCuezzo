@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Cartwidget from './CartWidget';
 
 function Navbarcomponent() {
   return (
@@ -22,6 +23,7 @@ function Navbarcomponent() {
             <Nav.Link href="#link">PREGUNTAS FRECUENTES</Nav.Link>
             <Nav.Link href="#link">¿QUIENES SOMOS?</Nav.Link>
           </Nav>
+          <Cartwidget/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
