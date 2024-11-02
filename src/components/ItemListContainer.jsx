@@ -1,15 +1,14 @@
-import { Button } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 
 const ItemListContainer = (props) =>{
     const {greeting} = props
 return(
-    <div>
-    {/* debo darle estilo a esto */}
-    <h2>{greeting}</h2>
-    <Button variant="primary">Primary</Button>
-    </div>
-    
-)
+       <Container fluid className="bg-dark text-white">
+      <div className="text-center">
+        <p>{greeting}</p>
+      </div>
+    </Container>
+    )
 
 }
 

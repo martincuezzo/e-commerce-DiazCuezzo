@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Navbarcomponent/>
-      <ItemListContainer greeting='bienvenido a mi sitio web'/>
+      <ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>
     </div>
       
     
