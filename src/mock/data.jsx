@@ -5,7 +5,7 @@ const productos=[
         descripcion:`camisa de lino`,
         img:'../camisa boxy.webp',
         precio:200,
-        categoria:`camisa-larga`
+        categoria:`camisa-corta`
     },
     {   id:'2',
         nombre:`Chino negro`,
@@ -21,7 +21,7 @@ const productos=[
         descripcion:`camisa de lino`,
         img:'../camisa lino clasico.webp',
         precio:240,
-        categoria:`camisa-corta`
+        categoria:`camisa-larga`
     },
     {   id:'4',
         nombre:`Gorra Rock`,
@@ -34,12 +34,19 @@ const productos=[
     {   id:'5',
         nombre:`Remera Yellow`,
         stock:20,
-        descripcion:`algodon`,
+        descripcion:`cuello mao`,
         img:'../remera yellow.webp',
         precio:2030,
         categoria:`remeras`
+    },
+    {   id:'6',
+        nombre:`Camisa Lino Raya ancha`,
+        stock:10,
+        descripcion:`algodon`,
+        img:'../camisa lino raya.webp',
+        precio:2030,
+        categoria:`camisa-larga`
     }
-    
     
     ]
     export const getProductos= ()=>{

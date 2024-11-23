@@ -2,20 +2,32 @@ import React,{useState,useEffect} from "react"
 import { Button, Container } from "react-bootstrap"
 import { getProductos } from "../mock/data"
 import ItemList from "./ItemList"
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = (props) =>{
   //nuevo codigo
   const [productos,setProductos]=useState([])   //creo espacio para el array pedido
   const [loading,setLoading]=useState(false)    //estado que maneja el cargando
-
+  const {categoria}=useParams()
   //simulacion de pedido de dato
+  
+  
   useEffect(()=>{
     setLoading(true)
     getProductos()
-    .then((res)=>setProductos(res))
+    
+  .then((res)=>{
+    if(categoria){
+        //filtro
+        setProductos(res.filter((producto) => producto.categoria === categoria))
+    }else{
+        //respuesta sin filtrar
+        setProductos(res)
+    }
+})
     .catch((error)=>console.log(error))
     .finally(()=>setLoading(false))
-  },[])
+  },[categoria])
 
   //nuevo codigo
     const {greeting} = props
