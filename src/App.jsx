@@ -7,19 +7,16 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 function App() {
   
   return (
-    // <BrowserRouter>
-    //   <Navbarcomponent/>
-    // <Routes>
-    // <Route path='/' element={<ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>}/>
-    // </Routes>
-    // </BrowserRouter>
-
-    //para probar
-    <div>
+    
+    <BrowserRouter>
     <Navbarcomponent/>
-    <ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>
-    <ItemDetailContainer/>
-    </div>
+    <Routes>
+    <Route path='/' element={<ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>}/>
+    <Route path='/categoria/:categoria' element={<ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>}/>
+    <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+    
+    </Routes>
+    </BrowserRouter>
 
 
   )

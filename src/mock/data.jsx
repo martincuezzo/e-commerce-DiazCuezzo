@@ -3,7 +3,7 @@ const productos=[
         nombre:`Camisa Boxy`,
         stock:20,
         descripcion:`camisa de lino`,
-        img:'./camisa boxy.webp',
+        img:'../camisa boxy.webp',
         precio:200,
         categoria:`camisa-larga`
     },
@@ -11,7 +11,7 @@ const productos=[
         nombre:`Chino negro`,
         stock:20,
         descripcion:`sin detalle`,
-        img:'./chino negro.webp',
+        img:'../chino negro.webp',
         precio:2300,
         categoria:`pantalones`
     },
@@ -19,7 +19,7 @@ const productos=[
         nombre:`Camisa lino clasico`,
         stock:20,
         descripcion:`camisa de lino`,
-        img:'./camisa lino clasico.webp',
+        img:'../camisa lino clasico.webp',
         precio:240,
         categoria:`camisa-corta`
     },
@@ -27,7 +27,7 @@ const productos=[
         nombre:`Gorra Rock`,
         stock:20,
         descripcion:`sin descripcion`,
-        img:'./gorra rock.webp',
+        img:'../gorra rock.webp',
         precio:2220,
         categoria:`accesorios`
     },
@@ -35,7 +35,7 @@ const productos=[
         nombre:`Remera Yellow`,
         stock:20,
         descripcion:`algodon`,
-        img:'./remera yellow.webp',
+        img:'../remera yellow.webp',
         precio:2030,
         categoria:`remeras`
     }

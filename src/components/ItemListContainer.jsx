@@ -21,9 +21,6 @@ const ItemListContainer = (props) =>{
     const {greeting} = props
    
    
-   
-
-
 return(
        <Container fluid className="bg-dark text-white">
       <div className="text-center">

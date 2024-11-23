@@ -6,8 +6,9 @@ import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
     const [producto, setProducto]= useState({})
+    const {id} = useParams() //para traerme la direccion, en string
     useEffect(()=>{
-        getOneProduct(`1`)
+        getOneProduct(id)
         .then((res)=> setProducto(res))
         .catch((error)=> console.log(error))
     },[])
