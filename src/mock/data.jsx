@@ -46,6 +46,22 @@ const productos=[
         img:'../camisa lino raya.webp',
         precio:2030,
         categoria:`camisa-larga`
+    },
+    {   id:'7',
+        nombre:`Camisa Raya Ancha`,
+        stock:10,
+        descripcion:`algodon`,
+        img:'../Camisa Raya Ancha.webp',
+        precio:2030,
+        categoria:`camisa-larga`
+    },
+    {   id:'8',
+        nombre:`Camisa Lino rayado`,
+        stock:10,
+        descripcion:`algodon`,
+        img:'../Camisa Lino rayado.webp',
+        precio:2030,
+        categoria:`camisa-larga`
     }
     
     ]

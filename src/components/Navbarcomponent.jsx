@@ -21,8 +21,8 @@ function Navbarcomponent() {
             <Nav.Link as={Link} to="/categoria/remeras" >REMERAS</Nav.Link>
             <Nav.Link as={Link} to="/categoria/pantalones">PANTALONES</Nav.Link>
             <Nav.Link as={Link} to="/categoria/accesorios">ACCESORIOS</Nav.Link>
-            <Nav.Link >PREGUNTAS FRECUENTES</Nav.Link>
-            <Nav.Link >¿QUIENES SOMOS?</Nav.Link>
+            <Nav.Link as={Link} to="/faq">PREGUNTAS FRECUENTES</Nav.Link>
+            <Nav.Link as={Link} to="/about-us">¿QUIENES SOMOS?</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Cartwidget/>
