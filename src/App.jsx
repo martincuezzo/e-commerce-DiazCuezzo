@@ -16,8 +16,8 @@ function App() {
     <Route path='/' element={<ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>}/>
     <Route path='/categoria/:categoria' element={<ItemListContainer greeting='3 cuotas sin interés / 15% OFF pagando por transferencia'/>}/>
     <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-    <Route path='/faq' element={<Faqs/>}/>
-    <Route path='/about-us' element={<AboutUs/>}/>
+    <Route path='/preguntas-frecuentes' element={<Faqs/>}/>
+    <Route path='/quienes-somos' element={<AboutUs/>}/>
     </Routes>
     </BrowserRouter>
 
