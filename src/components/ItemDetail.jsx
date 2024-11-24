@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemCount from './ItemCount'
-import { Card, Button } from "react-bootstrap";
 
 const ItemDetail = ({producto}) => {
 
@@ -16,7 +15,6 @@ const ItemDetail = ({producto}) => {
     <p className="text-muted">{producto.descripcion}</p>
     <p className="text-secondary">${producto.precio}</p>
     <ItemCount stock={producto.stock} initial={1} onAdd={onAdd} />
-
     </div>
 
 

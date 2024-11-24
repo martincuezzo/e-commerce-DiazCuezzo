@@ -1,16 +1,14 @@
 import React,{useState,useEffect} from "react"
-import { Button, Container } from "react-bootstrap"
 import { getProductos } from "../mock/data"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
+import { Container } from "react-bootstrap"
 
 const ItemListContainer = (props) =>{
-  //nuevo codigo
+  
   const [productos,setProductos]=useState([])   //creo espacio para el array pedido
   const [loading,setLoading]=useState(false)    //estado que maneja el cargando
   const {categoria}=useParams()
-  //simulacion de pedido de dato
-  
   
   useEffect(()=>{
     setLoading(true)
@@ -29,13 +27,12 @@ const ItemListContainer = (props) =>{
     .finally(()=>setLoading(false))
   },[categoria])
 
-  //nuevo codigo
     const {greeting} = props
    
    
 return(
-       <Container fluid className="bg-dark text-white">
-      <div className="text-center">
+       <Container fluid>
+      <div className="text-center bg-dark text-white">
         <p>{greeting}</p>
       </div>
       

@@ -1,4 +1,3 @@
-// debe tener controlador y boton
 import React, { useState } from "react"
 const ItemCount = ({stock,initial,onAdd})=>{
     const [contador,setContador]= useState(initial)
@@ -34,9 +33,7 @@ const ItemCount = ({stock,initial,onAdd})=>{
        <button className="btn btn-dark mt-2" onClick={ValidateOnAdd}>Agregar al carrito</button>
     </div>
 
-
-    )
-    
+    ) 
 
 }
 export default ItemCount
