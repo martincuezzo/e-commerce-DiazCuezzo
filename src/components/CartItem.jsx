@@ -5,30 +5,10 @@ import { MdDelete } from 'react-icons/md'
 const CartItem = ({prod}) => {
     const {removeItem} = useContext(CartContext)
   return (
-    
-    // <div className="container py-4">
-    //     <div className="row align-items-center">
-    //     {/* Columna para la imagen */}
-    //     <div className="col-12 col-md-6 text-center">
-    //       <img src={prod.img} alt={prod.name} className="img-fluid" style={{ maxWidth: '10rem', objectFit: 'contain' }}
-    //       />
-    //     </div>
-
-    //     {/* Columna para los textos y el botón */}
-    //     <div className="col-12 col-md-6">
-    //       <p className="mb-2">{prod.nombre}</p>
-    //       <p className="mb-2">Cantidad: {prod.qty}</p>
-    //       <p className="mb-4">${prod.precio}</p>
-    //       <button className="btn btn-dark" onClick={() => removeItem(prod.id)}>
-    //         Eliminar
-    //       </button>
-    //     </div>
-    //     </div>
-    // </div>
-    
+            
     <div className="container py-4">
-  {/* Fila de datos del producto */}
-  <div className="row d-flex align-items-center">
+    {/* Fila de datos del producto */}
+    <div className="row d-flex align-items-center">
     {/* Imagen del producto */}
     <div className="col-12 col-md-2 text-center">
       <img src={prod.img} alt={prod.name} className="img-fluid" style={{ maxWidth: '10rem', objectFit: 'contain',marginBottom:'5px' }} />
@@ -67,7 +47,7 @@ const CartItem = ({prod}) => {
   </div>
 
   {/* Línea horizontal gris entre productos */}
-  <hr className="my-4" style={{ borderColor: '#ccc' }} />
+  <div style={{ height: '1px', backgroundColor: '#ccc', margin: '20px 0' }}></div>
 </div>
 
   )
