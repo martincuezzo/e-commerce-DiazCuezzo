@@ -19,10 +19,15 @@ const ItemDetail = ({producto}) => {
     <img className="img-fluid" src={producto.img} alt={producto.nombre} />
     <p className="text-muted">{producto.descripcion}</p>
     <p className="text-secondary">${producto.precio}</p>
-    {purchase ? <Link className='btn btn-dark' to='/cart'> Ir al carrito</Link> : <ItemCount stock={producto.stock} initial={1} onAdd={onAdd} />}
+    {purchase 
+    ? <div>
+      <Link className='btn btn-dark m-3' to='/'>Seguir comprando</Link>
+     <Link className='btn btn-dark' to='/cart'> Ir al carrito</Link> 
+     </div>
+    : <ItemCount stock={producto.stock} initial={1} onAdd={onAdd} />
+    }
+   
     </div>
-
-
   )
 }
 
