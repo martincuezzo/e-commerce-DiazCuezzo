@@ -12,7 +12,6 @@ const ItemDetailContainer = () => {
         .then((res)=> setProducto(res))
         .catch((error)=> console.log(error))
     },[])
-    console.log(producto)
   return (
     <div>
         <ItemDetail producto={producto}/>

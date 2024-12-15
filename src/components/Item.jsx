@@ -11,7 +11,7 @@ const Item = ({product}) => {
   <div className="card-body">
     <h5 className="card-title">{product.nombre}</h5>
     <p className="card-text">${product.precio}</p>
-    <button className="btn btn-primary m-2" onClick={()=> navegar(`/item/${product.id}`)} > Ver más</button>
+    <button className="btn btn-dark m-2" onClick={()=> navegar(`/item/${product.id}`)} > Ver más</button>
   </div>
 </div>
   )

@@ -5,8 +5,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Cartwidget from './CartWidget';
 import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 function Navbarcomponent() {
+  //para comprobar que se agregan al carrito los item
+  const{cart}=useContext(CartContext)
+  console.log(cart)
+
+  const{cartQty}=useContext(CartContext)
+
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -25,7 +34,7 @@ function Navbarcomponent() {
             <Nav.Link as={Link} to="/quienes-somos">¿QUIENES SOMOS?</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Cartwidget/>
+        {cartQty()>0 && <Cartwidget/>}
       </Container>
     </Navbar>
   );
