@@ -3,6 +3,8 @@ import { getProductos } from "../mock/data"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
 import { Container } from "react-bootstrap"
+import { collection, getDocs, query, where} from "firebase/firestore"
+import { db } from "../services/firebase"
 
 const ItemListContainer = (props) =>{
   
@@ -10,22 +12,48 @@ const ItemListContainer = (props) =>{
   const [loading,setLoading]=useState(false)    //estado que maneja el cargando
   const {categoria}=useParams()
   
-  useEffect(()=>{
-    setLoading(true)
-    getProductos()
+// firebase
+useEffect(()=>{
+setLoading(true)
+//conectamos con la coleccion
+const productsCollection=categoria 
+? query(collection(db,"productos"),where("categoria","==",categoria)) 
+  : collection(db,"productos")
+
+//Pedir documentos - con metodo getDocs
+getDocs(productsCollection)
+.then((res)=>{
+   // creamos una lista procesando los documentos obtenidos
+  const list = res.docs.map((product)=>{
+      return{
+          id: product.id, // extraemos el id único del documento
+          ...product.data() // obtenemos todos los campos del documento
+      }
+  })
+  setProductos(list) // actualizamos el estado 'productos' con la lista obtenida
+} )
+.catch((error)=> console.log(error))
+.finally(()=> setLoading(false))
+
+},[categoria])
+
+// MOCK LOCAL
+//   useEffect(()=>{
+//     setLoading(true)
+//     getProductos()
     
-  .then((res)=>{
-    if(categoria){
-        //filtro
-        setProductos(res.filter((producto) => producto.categoria === categoria))
-    }else{
-        //respuesta sin filtrar
-        setProductos(res)
-    }
-})
-    .catch((error)=>console.log(error))
-    .finally(()=>setLoading(false))
-  },[categoria])
+//   .then((res)=>{
+//     if(categoria){
+//         //filtro
+//         setProductos(res.filter((producto) => producto.categoria === categoria))
+//     }else{
+//         //respuesta sin filtrar
+//         setProductos(res)
+//     }
+// })
+//     .catch((error)=>console.log(error))
+//     .finally(()=>setLoading(false))
+//   },[categoria])
 
     const {greeting} = props
    
