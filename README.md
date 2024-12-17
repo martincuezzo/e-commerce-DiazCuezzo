@@ -3,7 +3,7 @@
 Este proyecto aplica los conceptos aprendidos en el curso de React JS de Coderhouse. Y pone en práctica componentes reutilizables, el uso de props y estados, el manejo de rutas con React Router, y la integración de librerías como React Bootstrap para estilizar la interfaz. Además, implementé funcionalidades clave como el consumo de datos desde una base externa (Firebase/MockAPI), creación de un carrito de compras y control de la lógica de navegación.
 
 
-![image](forReadme.png)
+![image](public/forReadme.png)
 
 
 ### Demo 💻
