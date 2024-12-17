@@ -5,7 +5,7 @@ const Faqs = () => {
   return (
     
     <div>
-       <Container className="my-5">
+       <Container className="my-5 vh-100">
        <h2 className="text-center mb-4">Preguntas Frecuentes</h2>
        <div>
         <h3>Horario de atencion</h3>

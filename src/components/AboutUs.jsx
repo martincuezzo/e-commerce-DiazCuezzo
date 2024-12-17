@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const AboutUs = () => {
   return (
     <div >
-    <Container className="my-5">
+    <Container className="my-5 vh-100">
     <h2 className="text-center mb-4">¿Quiénes somos?</h2>
         <div>
             <p>LAFER es una tienda de ropa exclusiva para hombres, comprometida con ofrecer estilo, calidad y confort en cada prenda. Nacimos con la misión de brindar a los hombres modernos una selección de ropa que combine lo clásico con lo contemporáneo, adaptándose a sus diversas necesidades y personalidades.</p>

@@ -10,6 +10,7 @@ import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
 import Checkout from './components/Checkout';
 import Error from './components/Error';
+import Footer from './components/Footer';
 function App() {
   
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
 
     </CartProvider>
