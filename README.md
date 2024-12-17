@@ -24,8 +24,8 @@ Este proyecto fue realizado por las siguientes tecnologías
 
 * [React](https://reactjs.org/) - Librería de Javascript
 * [react-bootstrap](https://react-bootstrap.netlify.app) - Implementación de los componentes de Bootstrap adaptados para React
-* [Firebase](https://firebase.google.com/): utilizada como base de datos
-* [React Router Dom](https://reactrouter.com/): navegación por rutas
-* [React Icons](https://react-icons.github.io/react-icons/): utilizada en los iconos del sitio
-* [React Hook Form](https://reactrouter.com/): validación de formularios
+* [Firebase](https://firebase.google.com/): Utilizada como base de datos
+* [React Router Dom](https://reactrouter.com/): Utilizada en la navegación por rutas
+* [React Icons](https://react-icons.github.io/react-icons/): Utilizada en los iconos del sitio
+* [React Hook Form](https://reactrouter.com/): Utilizado en la validación de formularios
 
