@@ -9,6 +9,7 @@ import AboutUs from './components/AboutUs';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
 import Checkout from './components/Checkout';
+import Error from './components/Error';
 function App() {
   
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/quienes-somos' element={<AboutUs/>}/>
         <Route path='/cart' element={<CartContainer/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='*' element={<Error/>}/>
       </Routes>
     </BrowserRouter>
 

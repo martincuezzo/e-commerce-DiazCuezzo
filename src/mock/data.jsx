@@ -1,13 +1,5 @@
-const productos=[
-    {   id:'1',
-        nombre:`Camisa Boxy`,
-        stock:20,
-        descripcion:`camisa de lino`,
-        img:'../camisa boxy.webp',
-        precio:200,
-        categoria:`camisa-corta`
-    },
-    {   id:'2',
+export const productosdb=[
+    {   
         nombre:`Chino negro`,
         stock:20,
         descripcion:`sin detalle`,
@@ -15,7 +7,7 @@ const productos=[
         precio:2300,
         categoria:`pantalones`
     },
-    {   id:'3',
+    {   
         nombre:`Camisa lino clasico`,
         stock:20,
         descripcion:`camisa de lino`,
@@ -23,7 +15,7 @@ const productos=[
         precio:240,
         categoria:`camisa-larga`
     },
-    {   id:'4',
+    {   
         nombre:`Gorra Rock`,
         stock:20,
         descripcion:`sin descripcion`,
@@ -31,7 +23,7 @@ const productos=[
         precio:2220,
         categoria:`accesorios`
     },
-    {   id:'5',
+    {   
         nombre:`Remera Yellow`,
         stock:20,
         descripcion:`cuello mao`,
@@ -39,7 +31,7 @@ const productos=[
         precio:2030,
         categoria:`remeras`
     },
-    {   id:'6',
+    {   
         nombre:`Camisa Lino Raya ancha`,
         stock:10,
         descripcion:`algodon`,
@@ -47,7 +39,7 @@ const productos=[
         precio:2030,
         categoria:`camisa-larga`
     },
-    {   id:'7',
+    {  
         nombre:`Camisa Raya Ancha`,
         stock:10,
         descripcion:`algodon`,
@@ -55,7 +47,7 @@ const productos=[
         precio:2030,
         categoria:`camisa-larga`
     },
-    {   id:'8',
+    {   
         nombre:`Camisa Lino rayado`,
         stock:10,
         descripcion:`algodon`,
