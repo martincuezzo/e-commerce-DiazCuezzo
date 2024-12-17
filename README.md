@@ -8,7 +8,7 @@ Este proyecto aplica los conceptos aprendidos en el curso de React JS de Coderho
 
 ### Demo 💻
 
-Se puede ver el demo de la web en el siguiente link: [Lafer](https://leagueofhighlights.herokuapp.com/)
+Se puede ver el demo de la web en el siguiente link: [Lafer](https://lafer-martins-projects-57479229.vercel.app)
 
 ### Instalación 🔧
 
