@@ -34,6 +34,7 @@ const CartContainer = () => {
             </div>
             <div className="col-12 col-md-4 d-flex justify-content-center align-items-center mt-2 mt-md-0">
               <button className="btn btn-dark" onClick={clear}>Eliminar todos</button>
+              <Link className='btn btn-dark m-3' to='/checkout'>Terminar Compra</Link>
             </div>
           </div>
         </div>

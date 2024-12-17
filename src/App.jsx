@@ -8,6 +8,7 @@ import Faqs from './components/Faqs';
 import AboutUs from './components/AboutUs';
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
+import Checkout from './components/Checkout';
 function App() {
   
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/preguntas-frecuentes' element={<Faqs/>}/>
         <Route path='/quienes-somos' element={<AboutUs/>}/>
         <Route path='/cart' element={<CartContainer/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
     </BrowserRouter>
 
